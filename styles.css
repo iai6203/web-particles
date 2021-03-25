@@ -1,0 +1,69 @@
+* {
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+}
+
+div.cursor {
+  pointer-events: none;
+  user-select: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #000000;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+div.cursor.light {
+  background: #000000 !important;
+}
+div.cursor.dark {
+  background: #FFFFFF !important;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0 14px;
+  color: #000000;
+  font-size: 6rem;
+  font-weight: 800;
+  border: 8px solid #000000;
+  outline: none;
+  background: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.125s;
+}
+button.light {
+  color: #000000 !important;
+  border: 8px solid #000000 !important;
+}
+button.dark {
+  color: #FFFFFF !important;
+  border: 8px solid #FFFFFF !important;
+}
+button:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+/*# sourceMappingURL=styles.css.map */
